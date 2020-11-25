@@ -1,45 +1,46 @@
 //image
-PImage maps;
-PImage olive;
-PImage saba;
-PImage tomato;
-PImage tsuma;
-PImage pin;
-PImage hatake;
-PImage sea;
-PImage turn;
-PImage batsu;
-PImage finish;
+var mapsImage;
+var oliveImage;
+var sabaImage;
+var tomatoImage;
+var tsumaImage;
+var pinImage;
+var hatakeImage;
+var seaImage;
+var turnImage;
+var batsuImage;
+var finishImage;
 
 //fx
-boolean map_main = true;
-boolean map_sea = false;
-boolean map_hatakeA = false;
-boolean map_hatakeB = false;
+var map_main = true;
+var map_sea = false;
+var map_hatakeA = false;
+var map_hatakeB = false;
 
 //visible
-boolean vis_saba = false;
-boolean vis_tomato = false;
-boolean vis_olive = false;
+var vis_saba = false;
+var vis_tomato = false;
+var vis_olive = false;
 
 //height
-int hei = 1;
+var hei = 1;
+
 function setup() {
-  size(1280,720);
+  createCanvas(1280,720);
   frameRate(60);
   noCursor();
-  
-  maps = loadImage("maps.jpg");
-  hatake = loadImage("hatake.jpg");
-  sea = loadImage("sea.jpg");
-  olive = loadImage("Olive.png");
-  saba = loadImage("saba.png");
-  tomato = loadImage("tomato.png");
-  pin = loadImage("pin.png");
-  tsuma = loadImage("tsumayouji.png");
-  turn = loadImage("turn.png");
-  batsu = loadImage("batsu.png");
-  finish = loadImage("finish.jpg");
+
+  mapsImage = loadImage("./data/maps.jpg");
+  hatakeImage = loadImage("./data/hatake.jpg");
+  seaImage = loadImage("./data/sea.jpg");
+  oliveImage = loadImage("./data/Olive.png");
+  sabaImage = loadImage("./data/saba.png");
+  tomatoImage = loadImage("./data/tomato.png");
+  pinImage = loadImage("./data/pin.png");
+  tsumaImage = loadImage("./data/tsumayouji.png");
+  turnImage = loadImage("./data/turn.png");
+  batsuImage = loadImage("./data/batsu.png");
+  finishImage = loadImage("./data/finish.jpg");
 }
 
 
@@ -49,5 +50,5 @@ function draw() {
   hatakeA();
   hatakeB();
   end();
-  visible();
+  // visible();
 }
