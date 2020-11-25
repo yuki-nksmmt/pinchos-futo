@@ -1,4 +1,4 @@
-void hatakeB(){
+function hatakeB(){
   if(map_hatakeB == true){
     image(hatake,0,0,width,height);
     fill(255,120);

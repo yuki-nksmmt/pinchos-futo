@@ -1,4 +1,4 @@
-void mousePressed(){
+function mousePressed(){
 /*map*/
   //sea
   if(map_main != false&&mouseX >= 600 && mouseX < 650 && mouseY >= 450 && mouseY < 500){
@@ -15,7 +15,7 @@ void mousePressed(){
     map_hatakeB = true;
     map_main = false;
   }
-  
+
 /*sea*/
   //return
   if(map_sea != false&&mouseX >= 50 && mouseX < 150 && mouseY >= 50 && mouseY < 150){
@@ -26,9 +26,9 @@ void mousePressed(){
   if(map_sea != false&&mouseX >= 1100 && mouseX < 1260 && mouseY >= 550 && mouseY < 700){
     map_sea = false;
     map_main = true;
-  vis_saba = true; 
+  vis_saba = true;
 }
-  
+
   /*hatakeA*/
   //return
   if(map_hatakeA != false&&mouseX >= 50 && mouseX < 150 && mouseY >= 50 && mouseY < 150){
@@ -41,7 +41,7 @@ void mousePressed(){
     map_main = true;
     vis_tomato = true;
   }
-  
+
   /*hatakeA*/
   //return
   if(map_hatakeB != false&&mouseX >= 50 && mouseX < 150 && mouseY >= 50 && mouseY < 150){

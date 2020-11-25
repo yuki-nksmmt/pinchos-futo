@@ -1,4 +1,4 @@
-void sea(){
+function sea(){
   if(map_sea == true){
     image(sea,0,0,width,height);
     fill(255,120);
