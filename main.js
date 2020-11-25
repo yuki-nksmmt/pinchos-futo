@@ -26,7 +26,9 @@ var vis_olive = false;
 var hei = 1;
 
 function setup() {
-  createCanvas(1280,720);
+  var myCanvas = createCanvas(1280, 720);
+  myCanvas.parent("canvasContainer");
+
   frameRate(60);
   noCursor();
 
