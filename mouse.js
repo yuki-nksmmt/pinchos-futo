@@ -1,10 +1,10 @@
 function mousePressed(){
 /*map*/
   //sea
-  if(map_main != false&&mouseX >= 600 && mouseX < 650 && mouseY >= 450 && mouseY < 500){
+  //if(map_main != false&&mouseX >= 600 && mouseX < 650 && mouseY >= 450 && mouseY < 500){
     map_sea = true;
     map_main = false;
-  }
+  //}
   //hatakeA
   if(map_main != false&&mouseX >= 500 && mouseX < 550 && mouseY >= 300 && mouseY < 350){
     map_hatakeA = true;
