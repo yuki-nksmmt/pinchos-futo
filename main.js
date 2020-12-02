@@ -30,7 +30,7 @@ function setup() {
   myCanvas.parent("canvasContainer");
 
   frameRate(60);
-  noCursor();
+  //noCursor();
 
   mapsImage = loadImage("./data/maps.jpg");
   hatakeImage = loadImage("./data/hatake.jpg");
@@ -47,6 +47,7 @@ function setup() {
 
 
 function draw() {
+
   maps();
   sea();
   hatakeA();
